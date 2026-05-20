@@ -67,7 +67,7 @@ const PORTFOLIO = {
 
   projects: [
         {
-          title: "Kaatha – Kaatha – Smart Grocery Credit & Billing Management Platform",
+          title: "Kaatha – Smart Grocery Credit & Billing Management Platform",
           icon: "🛒",
           description:
             "Comprehensive grocery credit management platform designed for shopkeepers to manage customer borrowings, billing records, transaction history, and outstanding balances with secure and centralized operations.",
