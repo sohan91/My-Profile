@@ -82,7 +82,7 @@ const PORTFOLIO = {
             "Optimized database operations for faster data retrieval",
             "Scalable backend services with Spring Cloud integration"
           ],
-          github: "https://github.com/sohanprasad2003",
+          github: "https://github.com/sohan91",
           demo: "#",
         },
 {
