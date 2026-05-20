@@ -67,11 +67,11 @@ const PORTFOLIO = {
 
   projects: [
         {
-          title: "Kaatha – Grocery Credit & Transaction Management System",
+          title: "Kaatha – Kaatha – Smart Grocery Credit & Billing Management Platform",
           icon: "🛒",
           description:
             "Comprehensive grocery credit management platform designed for shopkeepers to manage customer borrowings, billing records, transaction history, and outstanding balances with secure and centralized operations.",
-       tech: ["HTML • CSS • JavaScript • Java • Spring Boot • Microservices • Spring Cloud • Docker    • MySQL"],
+       tech: ["HTML • CSS • JavaScript • Java • Spring Boot • Microservices • Spring Cloud • Docker • MySQL"],
           features: [
             "Customer-wise grocery credit and borrowing management",
             "Real-time transaction history and billing records",
@@ -82,7 +82,7 @@ const PORTFOLIO = {
             "Optimized database operations for faster data retrieval",
             "Scalable backend services with Spring Cloud integration"
           ],
-          github: "https://github.com/sohan91",
+          github: "https://github.com/sohan91/Grocery-Management-System",
           demo: "#",
         },
 {
