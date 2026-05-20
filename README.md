@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sohan Prasad — Developer Portfolio
 
-## Getting Started
+Premium personal portfolio for **Adisharlapalli Sohan Prasad** — Java Backend Developer, Microservices & Cloud-Native Engineer.
 
-First, run the development server:
+Built with **HTML**, **CSS**, and **JavaScript** (no framework required).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- Dark glassmorphism UI with gradient accents
+- Animated hero with role rotator & particle background
+- Skills, projects, timeline, education, certifications
+- Contact form (mailto or Formspree)
+- Custom cursor, scroll progress, loading screen
+- Fully responsive
+- SEO meta tags
+
+## Project Structure
+
+```
+portfolio/
+├── index.html          # Main page
+├── css/
+│   └── styles.css      # All styles
+├── js/
+│   ├── data.js         # Portfolio content
+│   ├── main.js         # Interactions & rendering
+│   └── config.js       # Optional Formspree ID
+├── assets/
+│   └── resume.pdf      # Replace with your resume
+├── vercel.json         # Vercel deployment config
+├── env.example         # Environment variable reference
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Option 1: Open directly
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Double-click `index.html` or open it in your browser.
 
-## Learn More
+### Option 2: Local server (recommended)
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Python
+python -m http.server 8080
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Node.js (npx)
+npx serve .
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# VS Code Live Server extension
+```
 
-## Deploy on Vercel
+Visit `http://localhost:8080`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Profile photo** — Save your image as `assets/photo.jpg` (or set path in `js/config.js`):
+   ```javascript
+   window.PROFILE_PHOTO = "assets/photo.jpg";
+   ```
+2. **Resume** — Replace `assets/resume.pdf` with your actual PDF.
+3. **GitHub / LinkedIn** — Update URLs in `index.html` and `js/data.js`.
+4. **Projects** — Edit `PORTFOLIO.projects` in `js/data.js` with real repo links.
+5. **Contact form** — Uncomment and set `FORMSPREE_ID` in `js/config.js`:
+
+```html
+<script src="js/config.js"></script>
+```
+
+## Deployment
+
+### Vercel (recommended)
+
+1. Push this folder to GitHub.
+2. Go to [vercel.com](https://vercel.com) → **New Project** → Import repo.
+3. Framework preset: **Other** (static site).
+4. Root directory: `.` — Deploy.
+
+Or use CLI:
+
+```bash
+npm i -g vercel
+vercel
+```
+
+### GitHub Pages
+
+1. Push to GitHub.
+2. Settings → Pages → Source: `main` branch, folder `/ (root)`.
+3. Site URL: `https://<username>.github.io/<repo>/`
+
+### Netlify
+
+Drag and drop the project folder at [netlify.com/drop](https://app.netlify.com/drop).
+
+## Tech Stack
+
+| Layer      | Technology        |
+|-----------|-------------------|
+| Markup    | HTML5             |
+| Styling   | CSS3              |
+| Scripting | Vanilla JavaScript|
+
+No build step required.
+
+## Contact
+
+- **Email:** sohanprasad2003@gmail.com
+- **Phone:** +91-7569842133
+
+---
+
+© Adisharlapalli Sohan Prasad
