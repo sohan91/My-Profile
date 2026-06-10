@@ -195,7 +195,7 @@ learningJourney: [
     {
       degree: "B.Tech – Computer Science & Engineering (AI & Data Science)",
       school: "Vidya Jyothi Institute of Technology",
-      cgpa: "8.11",
+      cgpa: "8.33",
       period: "2023 – 2026",
     },
     {
