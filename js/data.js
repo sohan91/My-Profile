@@ -82,7 +82,7 @@ const PORTFOLIO = {
             "Optimized database operations for faster data retrieval",
             "Scalable backend services with Spring Cloud integration"
           ],
-          github: "https://github.com/sohan91/Grocery-Management-System",
+          github: "https://github.com/sohan91/Kaatha-App",
           demo: "#",
         },
 {
@@ -125,7 +125,7 @@ const PORTFOLIO = {
         "Spring MVC architecture",
         "Secure authentication",
       ],
-      github: "https://github.com/sohan91/Spring-Boot-Practice/tree/master/06-Spring-Boot-Spring-MVC/Employee-Management-System",
+      github: "https://github.com/sohan91/Employee-Management-System",
       demo: "#",
     },
     {
@@ -153,7 +153,7 @@ const PORTFOLIO = {
         "Database optimization",
         "Dynamic data handling",
       ],
-      github: "https://github.com/sohan91/Java-Programs/tree/master/JDBC/JDBC_Poject/untitled",
+      github: "Java-Programs/JDBC/JDBC_Poject/JavaCRUDProj at master · sohan91/Java-Programs",
       demo: "#",
     },
   ],
