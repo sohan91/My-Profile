@@ -153,7 +153,7 @@ const PORTFOLIO = {
         "Database optimization",
         "Dynamic data handling",
       ],
-      github: "Java-Programs/JDBC/JDBC_Poject/JavaCRUDProj at master · sohan91/Java-Programs",
+      github: "https://github.com/sohan91/Java-Programs/tree/master/JDBC/JDBC_Poject/JavaCRUDProj",
       demo: "#",
     },
   ],
