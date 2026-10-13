@@ -110,15 +110,18 @@
       .join("");
   }
 
-  function renderTimeline() {
-    const el = $("#timeline");
+  function renderExperience() {
+    const el = $("#experienceTimeline");
     if (!el) return;
-    el.innerHTML = PORTFOLIO.learningJourney
+    el.innerHTML = (PORTFOLIO.experience || [])
       .map(
         (item) => `
       <div class="timeline-item">
         <h3>${item.title}</h3>
-        <p>${item.description}</p>
+        <p class="timeline-meta">${item.company} · ${item.role} · ${item.period}</p>
+        <ul class="timeline-bullets">
+          ${item.bullets.map((b) => `<li>${b}</li>`).join("")}
+        </ul>
       </div>`
       )
       .join("");
@@ -140,6 +143,28 @@
       </article>`
       )
       .join("");
+  }
+
+  function renderCertifications() {
+    const grid = $("#certificationsGrid");
+    if (grid) {
+      grid.innerHTML = (PORTFOLIO.certifications || [])
+        .map(
+          (cert) => `
+      <article class="card edu-card">
+        <h3>${cert.title}</h3>
+        <p class="edu-school">${cert.issuer}</p>
+      </article>`
+        )
+        .join("");
+    }
+
+    const list = $("#achievementsList");
+    if (list) {
+      list.innerHTML = (PORTFOLIO.achievements || [])
+        .map((item) => `<li>${item}</li>`)
+        .join("");
+    }
   }
 
   function initContactForm() {
@@ -207,9 +232,10 @@
     initNavbar();
     initRoleRotator();
     renderSkills();
+    renderExperience();
     renderProjects();
-    renderTimeline();
     renderEducation();
+    renderCertifications();
     initContactForm();
     initBackToTop();
     initFooter();

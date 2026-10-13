@@ -3,207 +3,161 @@
  */
 
 const PORTFOLIO = {
-  roles: [
-    "Java Backend Developer",
-    "Software Engineer",
-  "Backend Developer"  ],
+  roles: ["Java Backend Developer", "Software Engineer", "Backend Developer"],
 
   skills: [
     {
-      title: "Java Backend",
-      icon: "⚙️",
+      title: "Languages",
+      items: ["Java", "SQL", "JavaScript"],
+    },
+    {
+      title: "Backend",
       items: [
-        "Java",
         "Spring Boot",
-        "Spring MVC",
         "Spring Security",
+        "Spring Data JPA",
+        "Hibernate",
         "REST APIs",
         "Microservices",
-        "Spring Cloud",
-        "Hibernate",
-        "JDBC",
       ],
     },
-    
     {
-      title: "Messaging & Observability",
-      icon: "📡",
-      items: [
-        "Apache Kafka",
-        "RabbitMQ",
-        "Grafana",
-        "Loki",
-        "Tempo",
-        "Prometheus",
-        "OpenTelemetry",
-      ],
+      title: "Messaging & Reliability",
+      items: ["Apache Kafka", "Resilience4j"],
     },
     {
       title: "Databases",
-      icon: "🗄️",
       items: ["MySQL"],
     },
     {
+      title: "Web",
+      items: ["HTML5", "CSS3"],
+    },
+    {
+      title: "Version Control & DevOps",
+      items: ["Git", "GitHub", "Maven", "Docker", "Kubernetes (Basics)"],
+    },
+    {
       title: "Tools",
-      icon: "🛠️",
-      items: ["Git", "GitHub", "Maven", "IntelliJ IDEA","Postman"],
+      items: ["IntelliJ IDEA", "VS Code", "Eclipse", "Postman"],
     },
     {
-      title: "Core Concepts",
-      icon: "📚",
-      items: [
-        "OOP",
-        "Data Structures",
-        "Operating Systems",
-        "Cloud-Native Applications",
+      title: "Core CS",
+      items: ["Data Structures & Algorithms", "OOP", "Design Patterns"],
+    },
+  ],
+
+  experience: [
+    {
+      title: "Institute Management System",
+      company: "VS IT Solutions",
+      role: "Java Full Stack",
+      period: "6 Months | May 2026 – October 2026",
+      bullets: [
+        "Developed an institute management system to track student attendance, fee payments, weekly mock interviews, exams, and batch-wise academic activities.",
+        "Implemented batch-specific tracking to monitor student progress and maintain organised academic records across multiple batches.",
+        "Developed assignment management functionality for batch coordinators to streamline task allocation and monitor completion.",
+        "Implemented secure authentication and role-based authorisation to restrict access to student records and administrative features based on user roles.",
+        "Integrated backend APIs with responsive frontend components to enable efficient data management and seamless interaction across the application.",
       ],
-    },
-    {
-      title: "Frontend",
-      icon: "🎨",
-      items: ["HTML", "CSS", "JavaScript"],
     },
   ],
 
   projects: [
-        {
-          title: "Kaatha – Smart Grocery Credit & Billing Management Platform",
-          icon: "🛒",
-          description:
-            "Comprehensive grocery credit management platform designed for shopkeepers to manage customer borrowings, billing records, transaction history, and outstanding balances with secure and centralized operations.",
-       tech: ["HTML • CSS • JavaScript • Java • Spring Boot • Microservices • Spring Cloud • Docker • MySQL"],
-          features: [
-            "Customer-wise grocery credit and borrowing management",
-            "Real-time transaction history and billing records",
-            "Automatic outstanding balance calculations",
-            "Secure authentication and role-based access control",
-            "Modular microservices-based backend architecture",
-            "Centralized customer and payment tracking dashboard",
-            "Optimized database operations for faster data retrieval",
-            "Scalable backend services with Spring Cloud integration"
-          ],
-          github: "https://github.com/sohan91/Kaatha-App",
-          demo: "#",
-        },
-{
-  title: "Hostel Management System",
-  icon: "🏠",
-  description:
-    "Comprehensive hostel management platform enabling room allocation, payment tracking, complaint management, emergency blood donor assistance, and real-time hosteler engagement.",
-  tech: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Java",
-    "Spring Boot",
-    "MySQL"
-  ],
-  features: [
-    "Room allocation and availability management with floor-wise tracking",
-    "Hosteler registration and profile management with blood group details",
-    "Emergency blood donor assistance module for quick hosteler contact",
-    "Room-wise and floor-wise payment status monitoring",
-    "Online hostel fee payment integration for hostelers",
-    "Daily menu management with hosteler feedback and responses",
-    "Complaint registration and tracking system",
-    "Real-time notifications and email alerts for payments and complaints",
-    "Hostel dashboard analytics for occupancy and operational monitoring",
-    "Live chat and communication system between hostel owner and hostelers"
-  ],
-  github: "https://github.com/sohan91/Hostel-Management-System",
-  demo: "#",
-},
+    {
+      title: "Kaatha – Grocery Credit & Billing Platform",
+      description:
+        "Microservices-based grocery credit platform that enables shopkeepers to manage customer purchases, outstanding balances, and payment records digitally.",
+      tech: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "Docker",
+        "Kafka",
+        "MySQL",
+        "Spring Cloud Gateway",
+        "Eureka",
+        "OpenFeign",
+      ],
+      features: [
+        "Shopkeeper-initiated customer registration and OTP-based authentication with separate customer ledgers per shop.",
+        "REST APIs with Spring Cloud Gateway, Eureka Service Discovery, and OpenFeign for inter-service communication.",
+        "Payment workflows and automated SMS notifications for outstanding dues, purchase history, and secure settlements.",
+        "Digital tracking of customer purchases, outstanding balances, and payment records.",
+      ],
+      github: "https://github.com/sohan91/Kaatha-App",
+      demo: "#",
+    },
+    {
+      title: "Hostel Connect – Resident Services & Support",
+      description:
+        "Microservice-based hostel platform for registration, room allocation, fee calculation, and complaint handling for Hosteler and Hostel Owner roles.",
+      tech: [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+      features: [
+        "Registration, room allocation, fee calculation, and complaint handling for two user roles.",
+        "Protected 15+ endpoints with tiered permission login and role-based access to student and administration records.",
+        "Blood donor matching and complaints management with real-time status tracking.",
+        "20+ Postman test cases before deployment, with Git/GitHub and a layered architecture.",
+      ],
+      github: "https://github.com/sohan91/Hostel-Management-System",
+      demo: "#",
+    },
     {
       title: "Employee Management System",
-      icon: "👥",
       description:
-        "Enterprise employee CRUD application with Spring MVC and secure authentication.",
+        "Console-based application for HR personnel to create, modify, delete, search, and retrieve employee data using Java and MySQL.",
       tech: ["Java", "Spring MVC", "MySQL"],
       features: [
-        "CRUD operations",
-        "Login and registration",
-        "Spring MVC architecture",
-        "Secure authentication",
+        "Create, modify, delete, search, and retrieve employee records.",
+        "Three-tier architecture (Controller, Service, DAO) for modularity and separation of concerns.",
+        "MySQL-backed persistence for employee data.",
+        "Designed for easy future enhancement.",
       ],
       github: "https://github.com/sohan91/Employee-Management-System",
       demo: "#",
     },
-    {
-      title: "Java Server–Client Communication System",
-      icon: "🔌",
-      description:
-        "Socket-based real-time communication between server and multiple clients.",
-      tech: ["Java", "Socket Programming"],
-      features: [
-        "Socket programming",
-        "Optimized I/O communication",
-        "Real-time client-server interaction",
-      ],
-      github: "https://github.com/sohan91/Java-Programs/tree/master/Networking/ServerProject_GroupChat",
-      demo: "#",
-    },
-    {
-      title: "Java JDBC Application",
-      icon: "💾",
-      description:
-        "Database-driven application demonstrating JDBC CRUD and dynamic data handling.",
-      tech: ["Java", "JDBC", "MySQL"],
-      features: [
-        "JDBC CRUD operations",
-        "Database optimization",
-        "Dynamic data handling",
-      ],
-      github: "https://github.com/sohan91/Java-Programs/tree/master/JDBC/JDBC_Poject/JavaCRUDProj",
-      demo: "#",
-    },
   ],
-
-learningJourney: [
-  {
-    title: "Java Backend Development",
-    description:
-      "Built strong foundations in Core Java, OOP concepts, SQL, and problem-solving techniques.",
-  },
-  {
-    title: "Spring Boot Development",
-    description:
-      "Worked on REST APIs, Spring Boot architecture, authentication, and database-driven backend systems.",
-  },
-  {
-    title: "Full Stack Project Development",
-    description:
-      "Developed scalable applications including Hostel Management and transaction management systems using HTML,CSS,JS,Java,Spring Boot and MySQL.",
-  },
-  {
-    title: "Microservices Architecture",
-    description:
-      "Designed distributed backend services with API communication, modular architecture, and service separation.",
-  },
-  {
-    title: "Docker & Kubernetes",
-    description:
-      "Containerized Spring Boot applications and managed deployments using Kubernetes orchestration workflows.",
-  },
-  {
-    title: "DevOps & Cloud-Native Practices",
-    description:
-      "Learning  Helm Charts, observability tools, messaging systems, and scalable cloud-native deployments.",
-  },
-],
 
   education: [
     {
       degree: "B.Tech – Computer Science & Engineering (AI & Data Science)",
-      school: "Vidya Jyothi Institute of Technology",
+      school: "Vidya Jyothi Institute of Technology, Hyderabad",
       cgpa: "8.33",
       period: "2023 – 2026",
     },
     {
       degree: "Diploma – Computer Science Engineering",
-      school: "St. Mary's Engineering College",
+      school: "St. Mary's Engineering College, Hyderabad",
       cgpa: "8.39",
       period: "2020 – 2023",
     },
   ],
 
+  certifications: [
+    {
+      title: "DSA in Java",
+      issuer: "Scalar",
+    },
+    {
+      title: "SQL and Relational Databases",
+      issuer: "Scalar",
+    },
+  ],
+
+  achievements: [
+    "Led a team for the college major project, coordinating task allocation, implementation, and project delivery.",
+    "Solved 200+ problems on LeetCode consistently, strengthening data structures, algorithms, and problem-solving skills.",
+    "Gained hands-on development experience by building real-world applications using Java, Spring Boot, REST APIs, and microservices.",
+  ],
 };

@@ -1,6 +1,6 @@
 # Sohan Prasad — Developer Portfolio
 
-Premium personal portfolio for **Adisharlapalli Sohan Prasad** — Java Backend Developer, Microservices & Cloud-Native Engineer.
+Premium personal portfolio for **Adisharlapalli Sohan Prasad** — Java Backend Developer with internship experience in Spring Boot, Spring Security, REST APIs, and microservices.
 
 Built with **HTML**, **CSS**, and **JavaScript** (no framework required).
 
@@ -8,7 +8,7 @@ Built with **HTML**, **CSS**, and **JavaScript** (no framework required).
 
 - Dark glassmorphism UI with gradient accents
 - Animated hero with role rotator & particle background
-- Skills, projects, timeline, education, certifications
+- Skills, experience, projects, education, certifications, and achievements
 - Contact form (mailto or Formspree)
 - Custom cursor, scroll progress, loading screen
 - Fully responsive
@@ -107,6 +107,7 @@ No build step required.
 
 - **Email:** sohanprasad2003@gmail.com
 - **Phone:** +91-7569842133
+- **Location:** Hyderabad
 
 ---
 
